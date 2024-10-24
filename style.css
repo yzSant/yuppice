@@ -10,7 +10,7 @@
 }
 
 html, body{
-  max-height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -66,22 +66,32 @@ html, body{
 #imageMain{
   width: 100%;
   height: 700px;
-  background-image: url('freezerComercial.jpg');
+  background-image: url('assets/freezerComercial.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  flex: block;
+  position:relative;
+}
+
+#sobImage{
+  background-color: #006A87CC;
+  z-index:1;
+  padding-top:2%;
+  opacity: 0.8;
+  width: 100%;
+  height: 700px;
+  position:relative;
 }
 
 .textMain{
   font-size: 60px;
   color: #ffffff;
-  z-index: 2;
+  z-index: 5;
   margin-left: 5%;
   margin-top: 0;
 }
 /* Fim da imagem principal*/
 
-/*Seção O que é*/
+/Seção O que é/
 #describe {
   max-height:50%;
   max-width:100%;
@@ -99,9 +109,9 @@ html, body{
   margin: 0;
   font-size: 20px;
 }
-/*Fim O que é*/
+/Fim O que é/
 
-/*Seção Como funciona*/
+/Seção Como funciona/
 #func {
   max-height:50%;
   max-width:100%;
@@ -118,9 +128,9 @@ html, body{
   margin-left: auto;
   font-size: 20px;
 }
-/*Fim Como funciona*/
+/Fim Como funciona/
 
-/*Seção Importância*/
+/Seção Importância/
 #importancia {
   max-height:50%;
   max-width:100%;
@@ -136,9 +146,9 @@ html, body{
   margin: 0;
   font-size: 20px;
 }
-/*Fim Importância*/
+/Fim Importância/
 
-/*Seção Materias Utilizados*/
+/Seção Materias Utilizados/
 #materiais {
   background-color: #f0f0f0;
   max-width: 100%;
@@ -169,7 +179,6 @@ html, body{
   display: none; /* Remove as setas da barra de rolagem */
 }
 
-/* Estilizando a barra de rolagem para Webkit (Chrome, Safari) */
 #castor::-webkit-scrollbar {
   width: 12px; /* Largura da barra de rolagem */
 }
@@ -231,9 +240,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   padding: 10px; 
-  width: 40vw;
+  width: 33vw;
   height: 100%;
-  z-index:3;
 }
 
 .item:hover {
@@ -247,9 +255,9 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   box-shadow: -1px 38px 66px 0px rgba(0,0,0,0.55);
 }
-/*Fim  Materiais Utilizados*/
+/Fim  Materiais Utilizados/
 
-/*Seção sobre nós*/
+/Seção sobre nós/
 .membros{
   display:flex;
   flex-direction:row;
@@ -464,43 +472,145 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-/*Fim sobre nós*/
+/Fim sobre nós/
 
-  /* Seção foto */
-  #foto{    
+  /* Seção final*/
+  #final{
+    bottom:0;
+    background: linear-gradient(to bottom, #08789C 0%, #006A87 100%);
+  }
+
+  #fim{
+    margin-bottom:-2%;
+    padding: 4%;
+    width: 100%;
+    height:250vh;
+    color: #E7FEFF;
+    position: relative;
+  }
+
+  #foto-container{    
     height: auto;
     width: 100%;
-    background: linear-gradient(to bottom, #08789C 0%, #006A87 100%);
   } 
   
   #textfoto {
     height: 100%;
     width: 100%;
     color: #E7FEFF;
-    padding: 4% 4%;
     font-size: 20px;
   }
-  .fotoOne {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-  }
-  .cardFoto {
-    align-items: center ;
-    margin: 1%;
-    margin-bottom: 5%;
-    width: 30%;
-    height: auto;
-    background-color: #ffffff;
-  } 
 
-  .polaroid {
-    width: 96%;
-    height: auto;
-    margin-left: 7px;
-    margin-top: 20px;
-    margin-right:auto;
-    margin-bottom: 70px;
+  .polaroid-wrapper {
+    justify-content: center;
+    position: relative;
   }
-  /* Fim foto */
+  
+  .polaroid-border::before,
+  .polaroid-border::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    height: 310px;
+    width: 20px;
+    background-color: #ffffff;
+    z-index: 2000;
+  }
+  
+  .polaroid-border::after {
+    background-color:transparent;
+    left: unset;
+    right: 0px;
+  }
+  
+  .polaroid-slider {
+    background-color: #ffffff;
+    height: 420px;
+    width: 350px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+  }
+  
+  .polaroid-slider-image {
+    width: 310px;
+    height: 310px;
+    margin: 24px auto;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  
+  .slick-dots {
+    bottom: 16px;
+  }
+  
+  .slick-dots li button::before {
+    font-size: 10px;
+  }
+  
+  .slick-dots li.slick-active button::before {
+    font-size: 12px;
+    color: #333333;
+    opacity: 1;
+  }
+  
+  @media (max-width: 666px) {
+    .polaroid-slider {
+      height: 360px;
+      width: 300px;
+    }
+  
+    .polaroid-slider-image {
+      height: 260px;
+      width: 260px;
+    }
+  }
+  
+
+  #ref{
+    margin-bottom:5%;
+  }
+
+  #artigo{
+    width:100%;
+    height: 70vh;
+    border:0.05px;
+  }
+
+  #pdf{
+    width:100%;
+    height:100%;
+  }
+
+  #sac {
+    color: #E7FEFF;
+    display: flex;
+    width: 50%;
+    padding-left: 2%;
+    height: 10vh;
+    background-color: #60BAD2;
+    border-radius: 200px;
+    z-index: 2;
+    align-items: center;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:-4%;
+  }
+  
+  #footer {
+    color: #08789C;
+    display: flex;
+    padding: 20px 4%;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    background-color: #ffffff;
+    position: absolute; /* Fixamos o rodapé na base da página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Colocamos o z-index menor que o #sac para que ele fique sobreposto */
+  }
+  
+  /* Fim final haha */
