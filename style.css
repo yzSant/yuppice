@@ -66,7 +66,7 @@ html, body{
 #imageMain{
   width: 100%;
   height: 700px;
-  background-image: url('freezerComercial.jpg');
+  background-image: url('assets/freezerComercial.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position:relative;
@@ -91,7 +91,7 @@ html, body{
 }
 /* Fim da imagem principal*/
 
-/Seção O que é/
+/*Seção O que é*/
 #describe {
   max-height:50%;
   max-width:100%;
@@ -109,9 +109,9 @@ html, body{
   margin: 0;
   font-size: 20px;
 }
-/Fim O que é/
+/*Fim O que é*/
 
-/Seção Como funciona/
+/*Seção Como funciona*/
 #func {
   max-height:50%;
   max-width:100%;
@@ -128,9 +128,9 @@ html, body{
   margin-left: auto;
   font-size: 20px;
 }
-/Fim Como funciona/
+/*Fim Como funciona*/
 
-/Seção Importância/
+/*Seção Importância*/
 #importancia {
   max-height:50%;
   max-width:100%;
@@ -146,9 +146,9 @@ html, body{
   margin: 0;
   font-size: 20px;
 }
-/Fim Importância/
+/*Fim Importância*/
 
-/Seção Materias Utilizados/
+/*Seção Materias Utilizados*/
 #materiais {
   background-color: #f0f0f0;
   max-width: 100%;
@@ -255,9 +255,9 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   box-shadow: -1px 38px 66px 0px rgba(0,0,0,0.55);
 }
-/Fim  Materiais Utilizados/
+/*Fim  Materiais Utilizados*/
 
-/Seção sobre nós/
+/*Seção sobre nós*/
 .membros{
   display:flex;
   flex-direction:row;
@@ -472,7 +472,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-/Fim sobre nós/
+/*Fim sobre nós*/
 
   /* Seção final*/
   #final{
