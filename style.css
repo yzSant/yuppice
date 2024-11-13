@@ -22,6 +22,10 @@ html, body{
   color: black;
 }
 
+p{
+  size: 32px;
+}
+
 /* Início da Navbar*/
 .nav-conteudo {
   height: 100%;
