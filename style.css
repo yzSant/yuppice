@@ -23,7 +23,6 @@ body {
   color: black;
 }
 
-<<<<<<< HEAD
 p {
   font-size: 23px;
 }
@@ -44,10 +43,6 @@ p {
   background-color: #ddd;
   border-radius: 8px;
   object-fit: cover;
-=======
-p{
-  size: 32px;
->>>>>>> ab9c123dfae543ec13320dabd09a1467251ff9c9
 }
 
 /* Início da Navbar*/
