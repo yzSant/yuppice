@@ -30,6 +30,7 @@ p {
 .control {
   width: calc(1/2 * 100%);
   margin: 7% 7%;
+  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -262,9 +263,9 @@ body::-webkit-scrollbar-thumb {
   min-width: 60%;
 }
 
-.image-item{
+.image-item {
   object-fit: cover;
-  width:100%;
+  width: 100%;
 }
 
 .item {
@@ -338,7 +339,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent; /* Cor azul típica do LinkedIn */
+  background-color: transparent;
+  /* Cor azul típica do LinkedIn */
   color: white;
   border: none;
   border-radius: 5px;
@@ -347,23 +349,27 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none;
+  /* Remove sublinhado */
 }
 
 /* Estilização do ícone dentro do botão */
 .btnlinkedin i {
-  font-size: 33px; /* Tamanho do ícone */
+  font-size: 33px;
+  /* Tamanho do ícone */
 }
 
 .btnlinkedin i:hover {
-  color: #084d9b; /* Cor mais escura ao passar o mouse */
+  color: #084d9b;
+  /* Cor mais escura ao passar o mouse */
   transform: scale(1.1, 1.1);
 }
 
 
 /* Efeito de clique */
 .btnlinkedin i:active {
-  transform: translateY(0); /* Retorna à posição original ao clicar */
+  transform: translateY(0);
+  /* Retorna à posição original ao clicar */
 }
 
 .card {
@@ -482,6 +488,7 @@ body::-webkit-scrollbar-thumb {
 
 .title p {
   width: 50%;
+  max-height:calc(1/6* 100%);
 }
 
 .card-footer {
@@ -499,7 +506,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgMembro1 {
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0IYd4daRlpmP3EU5oD8MaBoTzeo4TrwsWHA&s');
+  background: url('assets/pedrosa.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -509,7 +516,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgMembro2 {
-  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6536b57-5510-4bca-9d38-37e06a213834/de18zql-efb0a19d-208f-4487-b631-10c5f5c1fa3e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NTM2YjU3LTU1MTAtNGJjYS05ZDM4LTM3ZTA2YTIxMzgzNFwvZGUxOHpxbC1lZmIwYTE5ZC0yMDhmLTQ0ODctYjYzMS0xMGM1ZjVjMWZhM2UuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZRJxARHB4Fqa6TLQHAstGHsRbhN8Tg5g1SH8-h3k5qM');
+  background: url('assets/luana.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -519,7 +526,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgMembro3 {
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Sh3OaNuVSNgd1Tr0Pv7cz5fq9hQnEQAM0g&s');
+  background: url('assets/lucas.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -529,7 +536,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgMembro4 {
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUY3H_qo0ljhekuO15bMn8Hnl5A8nWA8Ni7A&s');
+  background: url('assets/yoshida.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -539,7 +546,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgMembro5 {
-  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM59QTs-xykVfi1gAkpQbVk66Z_saB55s-gjbFlkT22SZWvjMsx6bBrlihN84zsHjCkeXqHyERtOc8JtOlgfan67HfUsgAVbI_5McScSJJYNbnd8GlJP3JZ5PNujmEv15mQ4GRKSlhbYU/s1600/Goofy_Cartoon_Photo.jpg');
+  background: url('assets/avelino.jpg');
   background-size: cover;
   position: absolute;
   width: 100%;
