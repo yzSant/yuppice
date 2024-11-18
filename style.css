@@ -23,28 +23,6 @@ body {
   color: black;
 }
 
-p {
-  font-size: 23px;
-}
-
-.control {
-  width: calc(1/2 * 100%);
-  margin: 7% 7%;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  align-items: center;
-}
-
-.images {
-  flex: 1;
-  width: 100%;
-  aspect-ratio: 1/1;
-  background-color: #ddd;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
 /* Início da Navbar*/
 .nav-conteudo {
   height: 100%;
